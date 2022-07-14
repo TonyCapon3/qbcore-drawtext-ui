@@ -1,0 +1,86 @@
+
+:root {
+    --primary-bg: #2196f3;
+    --active-bg: #0b67b3;
+    --font-color: white;
+}
+
+#drawtext-container {
+    display: none;
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 0.7px;
+}
+.text {
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4.5px;
+    font-size: 16px;
+    /* box-shadow: 0rem 0rem 0.1rem 0.05rem #000000; */
+}
+
+/* .text::first-letter{
+    text-shadow: 1px 1px 0px rgba(0,0,0,1);    
+} */
+
+.text.pressed {
+    background: var(--active-bg);
+}
+
+.top {
+    left: 45vw;
+    top: -100px;
+}
+.top.show {
+    transition: 0.5s;
+    top: 10px;
+    opacity: 1;
+}
+.top.hide {
+    transition: 0.5s;
+    top: -100px;
+    opacity: 0;
+}
+
+.right {
+    top: 50%;
+    right: -100px;
+}
+.right.show {
+    transition: 0.5s;
+    right: 10px;
+    opacity: 1;
+}
+.right.hide {
+    transition: 0.5s;
+    right: -100px;
+    opacity: 0;
+}
+
+.left {
+    top: 50%;
+    left: -100px;
+}
+
+.left.show {
+    transition: 0.5s;
+    left: 10px;
+    opacity: 1;
+}
+.left.hide {
+    transition: 0.5s;
+    left: -100px;
+    opacity: 0;
+}
